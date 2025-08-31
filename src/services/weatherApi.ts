@@ -1,5 +1,5 @@
-const API_KEY = '51f0210ac55a4a7bbb2130310253108';
-const BASE_URL = 'http://api.weatherapi.com/v1';
+const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
+const BASE_URL = process.env.NEXT_PUBLIC_WEATHER_API_URL;
 
 export class WeatherApiError extends Error {
   constructor(message: string, public statusCode?: number) {
